@@ -1,0 +1,66 @@
+{
+  "kind": "build_request",
+  "title": "Add custom domain support (DNS + canonical URL)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "text": "Add a documented, step-by-step process for connecting a custom domain to the deployed Internet Computer website, including the DNS records that must be created at the domain registrar and the Internet Computer configuration steps required to serve the site on that domain.",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "add domain to this website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Repository includes a clear 'Custom domain setup' guide (in a README or docs page) that lists prerequisites (domain ownership, DNS access) and provides a complete checklist of actions to complete domain connection.",
+        "The guide explicitly states what values the user must provide (the desired domain name, and the current deployed canister URL/identifier) and where to apply them.",
+        "The guide includes a troubleshooting section for common DNS/SSL propagation issues and how to verify the domain is correctly serving the site."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Update the site’s HTML metadata to support a custom domain as the canonical origin by adding a canonical link element that can be configured for the final domain, without breaking local development or default deployment URLs.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "add domain to this website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`frontend/index.html` includes a `<link rel=\"canonical\" ...>` entry that is safe for local development and can be set to the production custom domain during deployment.",
+        "All internal navigation continues to work when the site is loaded from either the default deployment URL or the custom domain (no hard-coded absolute URLs that would break under a new domain)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under `frontend/src/components/ui` or the immutable hook/bootstrap paths listed in SYSTEM_CONTEXT.",
+    "Keep the backend as a single Motoko actor; do not introduce additional backend services.",
+    "Do not introduce third-party auth providers, external databases, or external hosting/deployment providers."
+  ],
+  "nonGoals": [
+    "Purchasing a domain name on the user’s behalf.",
+    "Managing or automating registrar changes without the user providing domain/DNS access.",
+    "Adding new website sections unrelated to domain connectivity."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

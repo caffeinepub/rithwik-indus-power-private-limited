@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Empty Motoko actor indicating no backend logic is required for custom domain integration.",
+  "feature_evidence.json": "Feature evidence report listing custom-domain setup and canonical URL metadata features with related files and components.",
+  "frontend-file-summaries.txt": "Collected summaries describing each frontend file’s role in styling, components, documentation, and domain setup.",
+  "frontend/docs/custom-domain-setup.md": "Step‑by‑step guide for configuring DNS and registering a custom domain with Internet Computer boundary nodes.",
+  "frontend/index.css": "Tailwind base styles with OKLCH color variables and light/dark mode theming.",
+  "frontend/index.html": "HTML entry file containing an empty canonical link tag and mounting point for the React app.",
+  "frontend/README.md": "Project overview and setup guide for the React‑based frontend showcasing the solar power project.",
+  "frontend/src/App.tsx": "Root React component composing all major site sections and layout.",
+  "frontend/src/components/About.tsx": "About section featuring company highlights, mission, and supporting content blocks.",
+  "frontend/src/components/Contact.tsx": "Contact section showing company info and a simple name/message form.",
+  "frontend/src/components/Hero.tsx": "Hero section with solar-farm imagery, tagline, and scroll‑linked call‑to‑action buttons.",
+  "frontend/src/components/Project.tsx": "Displays project stats, images, and highlights for the Madurai solar installation using a grid-based layout.",
+  "frontend/src/components/SiteFooter.tsx": "Renders the site footer with company info, quick links, contact details, and a powered-by attribution.",
+  "frontend/src/components/SiteHeader.tsx": "Implements a responsive header with scroll effects, navigation links, and a mobile menu toggle.",
+  "frontend/src/components/Sustainability.tsx": "Shows sustainability initiatives and environmental commitments with icon cards and a highlighted info section.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor tied to Internet Identity, refetching dependent queries when the identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity context, login/logout handling, and identity persistence using DFINITY AuthClient.",
+  "frontend/src/index.css": "Defines Tailwind base styles and CSS variables for light/dark themes with a solar-inspired color palette.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and an Internet Identity provider before rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom colors, typography, container settings, animations, and plugin integrations for the project's design system.",
+  "project_state.json": "Stores project metadata including summary, architectural notes, features, and configuration for the Rithwik Indus Power website build."
+}

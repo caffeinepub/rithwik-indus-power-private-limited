@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 13,
+  "summary": "Website for Rithwik Indus Power Private Limited showcasing a solar power project/go-green initiative (registered office: Chennai; project site: Madurai, ~5 acres), with crisp content and HD solar plant imagery.",
+  "architectural_notes": [
+    "Registered Office Address content to use: RR Tower III, Thiruvika Industrial Estate, Guindy, Chennai - 600032.",
+    "Contact phone number to display: 044 42888111.",
+    "Contact info should include only the phone number (no email address to be added/displayed)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-marketing-website-for-rithwik-indus-power-private-limited-that-presents-the-solar-power-project-and-go-green-initiative-using-crisp-english-copy-that-clearly-states-1-company-name-2-registered-office-location-chennai-and-3-project-location-madurai-with-5-acres",
+      "title": "Create a responsive marketing website for “Rithwik Indus Power Private Limited” that presents the solar power project and go-green initiative, using crisp English copy that clearly states: (1) company name, (2) registered office location: Chennai, and (3) project location: Madurai with ~5 acres.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-visual-theme-for-the-site-colors-typography-spacing-and-component-style-that-fits-a-clean-modern-sustainability-industrial-energy-brand-apply-it-consistently-across-all-pages-and-sections",
+      "title": "Implement a coherent visual theme for the site (colors, typography, spacing, and component style) that fits a clean, modern sustainability/industrial energy brand; apply it consistently across all pages and sections.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-following-site-structure-with-clear-navigation-and-content-sections-home-hero-highlights-about-company-project-madurai-solar-plant-5-acres-sustainability-go-green-initiative-and-contact-company-details",
+      "title": "Add the following site structure with clear navigation and content sections: Home (hero + highlights), About Company, Project (Madurai solar plant; ~5 acres), Sustainability / Go Green Initiative, and Contact (company details).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-hd-solar-plant-imagery-as-static-assets-and-display-them-throughout-the-website-hero-and-supporting-sections-with-appropriate-cropping-alt-text-and-performance-friendly-sizing",
+      "title": "Generate and include HD solar plant imagery as static assets and display them throughout the website (hero and supporting sections) with appropriate cropping, alt text, and performance-friendly sizing.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-uploaded-image-file-rithwik-png-as-the-company-logo-and-use-it-in-the-website-branding-areas-replacing-the-current-icon-based-logo-in-the-header-and-footer",
+      "title": "Add the uploaded image file (rithwik.png) as the company logo and use it in the website branding areas, replacing the current icon-based logo in the header and footer.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-website-s-displayed-registered-office-information-to-use-the-full-registered-office-address-rr-tower-iii-thiruvika-industrial-estate-guindy-chennai-600032-wherever-the-registered-office-is-shown-including-the-contact-section-and-the-footer-locations-block",
+      "title": "Update the website’s displayed Registered Office information to use the full registered office address: \"RR tower III, Thiruvika Industrial Estate, Guindy, Chennai - 600032.\" wherever the Registered Office is shown (including the Contact section and the footer Locations block).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-contact-phone-number-044-42888111-to-the-contact-section-s-company-information-list-displayed-as-a-phone-field-and-formatted-exactly-as-044-42888111-and-clickable-as-a-tel-link",
+      "title": "Add the contact phone number \"044 42888111\" to the Contact section’s \"Company Information\" list, displayed as a phone field and formatted exactly as \"044 42888111\" (and clickable as a tel: link).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-contact-phone-number-044-42888111-to-the-footer-contact-location-area-so-it-is-visible-without-scrolling-to-the-contact-section-and-format-it-consistently-with-the-rest-of-the-footer-information-and-clickable-as-a-tel-link",
+      "title": "Add the contact phone number \"044 42888111\" to the footer contact/location area so it is visible without scrolling to the Contact section, and format it consistently with the rest of the footer information (and clickable as a tel: link).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-so-it-does-not-request-or-display-an-email-address-keeping-the-contact-method-phone-only-specifically-remove-the-email-address-field-from-the-contact-form-placeholder-ui",
+      "title": "Update the Contact section so it does not request or display an email address, keeping the contact method phone-only; specifically remove the \"Email Address\" field from the Contact form placeholder UI.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-documented-step-by-step-process-for-connecting-a-custom-domain-to-the-deployed-internet-computer-website-including-the-dns-records-that-must-be-created-at-the-domain-registrar-and-the-internet-computer-configuration-steps-required-to-serve-the-site-on-that-domain",
+      "title": "Add a documented, step-by-step process for connecting a custom domain to the deployed Internet Computer website, including the DNS records that must be created at the domain registrar and the Internet Computer configuration steps required to serve the site on that domain.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-s-html-metadata-to-support-a-custom-domain-as-the-canonical-origin-by-adding-a-canonical-link-element-that-can-be-configured-for-the-final-domain-without-breaking-local-development-or-default-deployment-urls",
+      "title": "Update the site’s HTML metadata to support a custom domain as the canonical origin by adding a canonical link element that can be configured for the final domain, without breaking local development or default deployment URLs.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a website for Rithwik Indus Power Private Limited about its solar power project/go-green initiative (Chennai registered office, Madurai ~5-acre project) with crisp content and HD solar plant images.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add a company logo to the website (use the provided image asset as the logo in the header/branding areas).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add contact phone number \"044 42888111\" to the website (Contact section and other relevant locations like header/footer if applicable).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add/connect a domain name for the website so it is accessible via a custom domain (DNS + deployment configuration).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Rithwik Indus Power Private Limited",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-10T10:12:07.666Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Add a documented, step-by-step process for connecting a custom domain to the deployed Internet Computer website, including the DNS records that must be created at the domain registrar and the Internet Computer configuration steps required to serve the site on that domain.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/docs/custom-domain-setup.md",
+          "frontend/README.md"
+        ],
+        "matchedFiles": [
+          "frontend/docs/custom-domain-setup.md",
+          "frontend/README.md"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Update the site’s HTML metadata to support a custom domain as the canonical origin by adding a canonical link element that can be configured for the final domain, without breaking local development or default deployment URLs.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/main.tsx",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/SiteFooter.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/index.html"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/README.md",
+    "frontend/docs/custom-domain-setup.md",
+    "frontend/index.html",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

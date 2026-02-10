@@ -1,0 +1,16 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH-based solar energy theme (deep forest green primary, bright solar yellow/green accents) for both light and dark modes, plus utility classes for sections.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom fonts (Inter, Poppins), solar-themed color tokens, custom shadows, and fade-in animation.",
+  "frontend/src/App.tsx": "Main application component that composes the complete single-page site with header, hero, about, project, sustainability, contact sections, and footer.",
+  "frontend/src/components/SiteHeader.tsx": "Responsive navigation header with rithwik.png logo, smooth scroll links, mobile menu toggle, and scroll-based background blur effect.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with solar farm background image, company tagline, and call-to-action buttons.",
+  "frontend/src/components/About.tsx": "Company overview section with four highlight cards, mission statement, and close-up solar panel imagery.",
+  "frontend/src/components/Project.tsx": "Madurai project showcase with stats grid, aerial and infrastructure images, and detailed project highlights.",
+  "frontend/src/components/Sustainability.tsx": "Go Green initiative section featuring four environmental benefits and commitment statement with gradient card.",
+  "frontend/src/components/Contact.tsx": "Contact section displaying company information (name, registered office address, project location, and phone number 044 42888111 as a clickable tel: link) with a display contact form containing name and message fields only.",
+  "frontend/src/components/SiteFooter.tsx": "Site footer with rithwik.png logo in company branding, quick links, location information including registered office address and phone number 044 42888111 as a clickable tel: link, and required caffeine.ai attribution with UTM tracking.",
+  "frontend/docs/custom-domain-setup.md": "Comprehensive guide for connecting a custom domain to the Internet Computer deployment, including prerequisites, DNS configuration steps, IC boundary node registration, verification checklist, and troubleshooting for common issues.",
+  "frontend/README.md": "Frontend project documentation with overview, tech stack, getting started instructions, project structure, and a link to the custom domain setup guide.",
+  "frontend/index.html": "HTML entry point with canonical link tag (id=\"canonical-url\") for SEO, initially empty to be set dynamically at runtime.",
+  "frontend/src/main.tsx": "Application entry point that initializes React Query, Internet Identity provider, and sets the canonical URL dynamically based on VITE_CANONICAL_URL environment variable or current origin."
+}

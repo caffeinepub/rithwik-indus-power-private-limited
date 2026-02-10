@@ -1,0 +1,58 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Custom domain support documentation and canonical URL metadata",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "summary": "Add a step-by-step custom domain setup guide (DNS + IC configuration), including prerequisites, required values, checklist, verification, and troubleshooting",
+      "acceptanceCriteria": [
+        "Repository includes a clear 'Custom domain setup' guide (in a README or docs page) that lists prerequisites (domain ownership, DNS access) and provides a complete checklist of actions to complete domain connection.",
+        "The guide explicitly states what values the user must provide (the desired domain name, and the current deployed canister URL/identifier) and where to apply them.",
+        "The guide includes a troubleshooting section for common DNS/SSL propagation issues and how to verify the domain is correctly serving the site."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/docs/custom-domain-setup.md",
+          "operation": "create",
+          "description": "Create a 'Custom domain setup' guide documenting: prerequisites (domain ownership + DNS access), the values the user must supply (desired domain and current deployed canister URL/identifier), required DNS records at the registrar, Internet Computer configuration steps to serve the site on that domain, a verification checklist, and troubleshooting for DNS/SSL propagation issues."
+        },
+        {
+          "path": "frontend/README.md",
+          "operation": "create",
+          "description": "Add a short documentation entry that links to the custom domain guide at frontend/docs/custom-domain-setup.md so it is easily discoverable from the frontend project."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Add a configurable canonical link tag that supports custom domains while remaining safe for local development and default IC URLs",
+      "acceptanceCriteria": [
+        "`frontend/index.html` includes a `<link rel=\"canonical\" ...>` entry that is safe for local development and can be set to the production custom domain during deployment.",
+        "All internal navigation continues to work when the site is loaded from either the default deployment URL or the custom domain (no hard-coded absolute URLs that would break under a new domain)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add a `<link rel=\"canonical\">` element (with an identifiable attribute such as an id) to the document head, with a safe default for local development; ensure it can be overridden/configured for the final production custom domain during deployment."
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Implement a small bootstrap step that sets/updates the canonical link href at runtime: prefer a configured build-time value (for the final custom domain) when present, otherwise fall back to the current origin so local dev and default deployment URLs remain valid."
+        },
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Review and, if necessary, adjust navigation/link handling to avoid hard-coded absolute internal URLs so that smooth-scroll navigation continues to work under both default deployment URLs and a custom domain."
+        },
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Review and, if necessary, adjust internal quick-link anchors to ensure they remain relative and functional when served from either the default deployment URL or a custom domain (no internal absolute URL assumptions)."
+        }
+      ]
+    }
+  ]
+}

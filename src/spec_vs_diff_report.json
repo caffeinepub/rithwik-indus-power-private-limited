@@ -1,0 +1,41 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-10T10:12:07.662Z",
+  "summary": "REQ-11 appears implemented via a configurable canonical link tag in `frontend/index.html` and (per file summary) runtime configuration in `frontend/src/main.tsx`. REQ-10 is partially evidenced: a new custom-domain setup doc was added and includes prerequisites, required values, and DNS steps, but the diff is truncated before showing the full IC registration steps/checklist and the required troubleshooting/verification section.",
+  "missing_requirements": [
+    {
+      "id": "REQ-10",
+      "requirement": "Add a documented, step-by-step process for connecting a custom domain to the deployed Internet Computer website, including IC configuration steps and troubleshooting/verification guidance.",
+      "reason": "The added guide shows prerequisites, required information, and DNS record instructions, but the diff content is truncated mid-way (at the start of the \"Using dfx\" command section). The required checklist completeness and the troubleshooting/verification section are not directly evidenced in the visible content.",
+      "evidence": [
+        "frontend/docs/custom-domain-setup.md"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Backend code changed to a minimal/empty actor with a comment stating no backend changes are needed for custom domains.",
+      "reason": "The BuildRequest focuses on documentation (REQ-10) and frontend canonical metadata (REQ-11). No backend changes were requested.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Added/mentioned Internet Identity provider initialization in the frontend entry point.",
+      "reason": "The BuildRequest does not request adding or changing authentication behavior/providers; it only requests canonical URL metadata and documentation. The diff summary claims `frontend/src/main.tsx` initializes an Internet Identity provider.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "confidence": 0.62,
+  "changed_files": [
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/README.md",
+    "frontend/docs/custom-domain-setup.md",
+    "frontend/index.html",
+    "project_state.json"
+  ]
+}
